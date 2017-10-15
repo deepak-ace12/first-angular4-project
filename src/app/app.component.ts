@@ -6,9 +6,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
-  visible = true;
-  toggleDiv(){
-  	this.visible = !this.visible;
-  }
+	username = "DeepakSharma"
+
+  myFavLang = [
+  	{ 'name':'html', 'type':'frontend'},
+  	{ 'name':'javascript', 'type':'frontend'},
+  	{ 'name':'python', 'type':'backend'},
+  	{ 'name':'java', 'type':'backend'},
+  ];
+
 }

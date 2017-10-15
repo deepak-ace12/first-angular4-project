@@ -1,0 +1,18 @@
+<div style="text-align:center">
+  <h1 blueColored>Hello World</h1>
+  Hello : {{username}}<br>
+  <input type="text" [(ngModel)]="username">
+</div>
+
+<ul *ngFor ="let language of myFavLang; let even=even">
+	<li *ngIf="even">{{i}}. {{language.name}} - {{language.type}}</li>	
+</ul>
+
+<ng-template #oddClicked>Odd number of clicks </ng-template>
+<ng-template #evenClicked>Even number of clicks </ng-template>
+
+<a routerLink="/" routeLinkActive="active">Home</a>
+<a routerLink="/dashboard" routeLinkActive="active">Dashboard</a>
+<a routerLink="/login" routeLinkActive="active">Login</a>
+
+
